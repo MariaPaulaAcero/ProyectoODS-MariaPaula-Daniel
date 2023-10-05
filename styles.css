@@ -26,7 +26,8 @@
     align-items: center;
     justify-content: center;
     grid-column: 1 / 2;
-    background: #4f81bd;
+    margin: 10px;
+    background: #768ba4;
     color: #efefef;
   }
   
@@ -35,8 +36,9 @@
     align-items: center;
     justify-content: center;
     grid-column: 2 / 2;
-    background: #4f81bd;
+    background: #8998ab;
     color: #efefef;
+    margin: 10px;
   }
 
 
