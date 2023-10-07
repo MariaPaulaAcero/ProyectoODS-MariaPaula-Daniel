@@ -8,4 +8,4 @@ function nextImage() {
     images[currentIndex].style.opacity = '1';
 }
 
-setInterval(nextImage, 3000); // Change image every 3 seconds (adjust as needed)
+setInterval(nextImage, 3000);
