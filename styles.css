@@ -1,3 +1,7 @@
+body {
+ width: 100%;
+}
+
 .footer-image {
   max-width: 100px;
   height: auto;
@@ -62,4 +66,18 @@ article {
 
 .gallery-image:first-child {
   opacity: 1;
+}
+
+.containervideo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containervideo_video,
+.containervideo_youtube {
+  flex: 1;
+  margin: 10px;
+  width: 5vw; /* Set the desired width */
+  height: 55vh; /* Set the desired height */
 }
