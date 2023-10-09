@@ -34,6 +34,11 @@ article {
   color: #efefef;
 }
 
+.image-container {
+  text-align: center;
+  color: #efefef;
+}
+
 .article-two {
   display: flex;
   align-items: center;
@@ -90,3 +95,19 @@ article {
   width: 5vw;
   height: 55vh; 
 }
+
+.imageCarousel-container {
+  position: relative; 
+}
+
+
+.overlay-link {
+  position: absolute; 
+  bottom: 10px; 
+  right: 10px; 
+  background: rgba(255, 255, 255, 0.306); 
+  padding: 5px 10px; 
+  color: rgb(14, 55, 14);
+  text-decoration: none;
+}
+
