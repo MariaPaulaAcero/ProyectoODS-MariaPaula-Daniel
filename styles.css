@@ -111,3 +111,9 @@ article {
   text-decoration: none;
 }
 
+/*Animación para las imagenes del index*/
+.imagen-ampliada {
+  transform: scale(1.2); /* Aumenta el tamaño al 120% */
+  transition: transform 0.3s; /* Agrega una transición suave */
+}
+

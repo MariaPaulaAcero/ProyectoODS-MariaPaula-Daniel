@@ -9,3 +9,16 @@ function nextImage() {
 }
 
 setInterval(nextImage, 3000);
+
+// Agrega la funcionalidad de agrandar imágenes al pasar el cursor
+const imagenes = document.querySelectorAll('.image-container img');
+
+imagenes.forEach((imagen) => {
+  imagen.addEventListener('mouseenter', () => {
+    imagen.classList.add('imagen-ampliada');
+  });
+
+  imagen.addEventListener('mouseleave', () => {
+    imagen.classList.remove('imagen-ampliada');
+  });
+});
