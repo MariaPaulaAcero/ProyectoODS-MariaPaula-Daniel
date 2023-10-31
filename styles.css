@@ -22,6 +22,7 @@ article {
   font-size: 2vh;
   margin: 1vh;
   gap: 1vh;
+  
 }
 
 .article-one {
@@ -32,6 +33,10 @@ article {
   margin: 10px;
   background: #518acf;
   color: #efefef;
+
+  border: 2px solid #7a98c5; /* Agrega un borde */
+  border-radius: 20px; /* Establece el radio del borde para que sea ovalado */
+  padding: 10px; /* Añade relleno para que el contenido no toque el borde */
 }
 
 .image-container {
@@ -47,6 +52,11 @@ article {
   background: #518acf;
   color: #efefef;
   margin: 10px;
+
+  border: 2px solid #7a98c5; /* Agrega un borde */
+  border-radius: 20px; /* Establece el radio del borde para que sea ovalado */
+  padding: 10px; /* Añade relleno para que el contenido no toque el borde */
+  
 }
 
 .article-three {
@@ -117,3 +127,25 @@ article {
   transition: transform 0.3s; /* Agrega una transición suave */
 }
 
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1 / 4;
+  color: #efefef;
+  margin: 20px;
+}
+
+.card1,.card2, .card3, .card4{
+  
+  border: 2px solid #7a98c5; /* Agrega un borde */
+  border-radius: 20px; /* Establece el radio del borde para que sea ovalado */
+  padding: 10px; /* Añade relleno para que el contenido no toque el borde */
+  grid-column: 1 / 4;
+  color: #262424;
+  margin: 20px;
+}
+
+#info {
+  display: none;
+}
