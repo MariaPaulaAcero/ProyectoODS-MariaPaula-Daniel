@@ -136,16 +136,38 @@ article {
   margin: 20px;
 }
 
-.card1,.card2, .card3, .card4{
+.card1,.card2, .card3, .card4 , .card5, .card6 , .card7, .card8{
   
-  border: 2px solid #7a98c5; /* Agrega un borde */
-  border-radius: 20px; /* Establece el radio del borde para que sea ovalado */
-  padding: 10px; /* Añade relleno para que el contenido no toque el borde */
+  border: 2px solid #7a98c5;
+  background-color: #d0ecf0;
+  text-align: center;
+  justify-content: center;
+  border-radius: 20px;
+  padding: 10px;
   grid-column: 1 / 4;
   color: #262424;
   margin: 20px;
+  height: auto; /* Establece una altura automática para las tarjetas */
 }
 
 #info {
   display: none;
+}
+
+.btn-mas {
+  width: 35px; /* Establece un ancho para el botón circular */
+  height: 35px; /* Establece una altura para el botón circular */
+  border-radius: 50%; /* Hace que el botón sea un círculo */
+  border: 2px solid #03286c;
+  background-color: #d0dce7; /* Cambia el color de fondo del botón */
+  color: #211f1f; /* Cambia el color del texto del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Elimina el subrayado de enlace si es un enlace */
+  margin: 10px; /* Establece un margen a la derecha para separar el botón del contenido */
+}
+
+h5{
+  text-align: center;
 }

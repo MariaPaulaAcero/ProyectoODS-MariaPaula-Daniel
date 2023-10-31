@@ -23,25 +23,32 @@ imagenes.forEach((imagen) => {
   });
 });
 
- // Obtén todos los botones con la clase "btn btn-primary"
- const buttons = document.querySelectorAll(".btn.btn-primary");
+ const buttons = document.querySelectorAll(".btn-mas");
 
- // Agrega un evento click a cada botón
- buttons.forEach(button => {
-   button.addEventListener("click", function(event) {
-     // Evita que el enlace se comporte como un enlace predeterminado
-     event.preventDefault();
-
-     // Encuentra el elemento "card-text" más cercano al botón que se ha hecho clic
-     const cardText = this.closest(".card-body").querySelector(".card-text");
-
-     // Verifica si el elemento "card-text" está oculto o visible
-     if (cardText.style.display === "none" || cardText.style.display === "") {
-       // Si está oculto, muéstralo
-       cardText.style.display = "block";
-     } else {
-       // Si está visible, ocúltalo
-       cardText.style.display = "none";
-     }
-   });
- });
+  buttons.forEach(button => {
+    button.addEventListener("click", function(event) {
+      event.preventDefault();
+      
+      const cardText = this.closest(".card-body").querySelector(".card-text");
+      
+      if (cardText.style.display === "none" || cardText.style.display === "") {
+        cardText.style.display = "block";
+      } else {
+        cardText.style.display = "none";
+      }
+      
+      // Recalcular la altura de todas las tarjetas después de hacer clic en el botón
+      const cards = document.querySelectorAll(".card");
+      let maxHeight = 0;
+      cards.forEach(card => {
+        card.style.height = "auto"; // Restablecer la altura a automática
+        const cardHeight = card.clientHeight;
+        if (cardHeight > maxHeight) {
+          maxHeight = cardHeight;
+        }
+      });
+      cards.forEach(card => {
+        card.style.height = maxHeight + "px"; // Establecer la misma altura para todas las tarjetas
+      });
+    });
+  });
